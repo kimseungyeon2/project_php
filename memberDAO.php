@@ -7,7 +7,7 @@
     private $db;
     function __construct(){
       try {
-        $this->db = new PDO("mysql:host=localhost;port=3307;dbname=test","root","0000");
+        $this->db = new PDO("mysql:host=localhost;port=-;dbname=-","-id","-password");
         $this->db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
       } catch (PDOException $e) {
         exit($e->getMessage());
